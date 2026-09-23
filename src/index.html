@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="logo1">here's a logo</div>
+      <ul>
+        <li><a href="#home" class="navthing active">Home</a></li>
+        <li><a href="#about" class="navthing">About</a></li>
+        <li><a href="#places" class="navthing">Places</a></li>
+        <li><a href="#quote" class="navthing">Quote</a></li>
+        <li><a href="#video" class="navthing">Video</a></li>
+        <li><a href="#contact" class="navthing">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="bigtextbox">
+      <h1>Hi, I'm Hriday</h1>
+      <p>Computer Science student who likes building stuff</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="threeboxes">
+      <div class="box1">
+        <i class="fa-solid fa-code"></i>
+        <h3>Code</h3>
+        <p>I like writing code in a bunch of different languages.</p>
+      </div>
+      <div class="box1">
+        <i class="fa-solid fa-laptop"></i>
+        <h3>Projects</h3>
+        <p>I've built a bunch of small projects and apps.</p>
+      </div>
+      <div class="box1">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>School</h3>
+        <p>Studying Computer Science at UIUC.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="places">
+    <h2>Places I'd Like to Visit</h2>
+    <div class="slideshowthing">
+      <button id="leftbtn" class="btnthing">&#10094;</button>
+      <div class="allpics">
+        <div class="onepic pic-on">
+          <img src="https://picsum.photos/id/1015/800/400" alt="slide 1">
+          <p>Japan</p>
+        </div>
+        <div class="onepic">
+          <img src="https://picsum.photos/id/1016/800/400" alt="slide 2">
+          <p>Iceland</p>
+        </div>
+        <div class="onepic">
+          <img src="https://picsum.photos/id/1018/800/400" alt="slide 3">
+          <p>New Zealand</p>
+        </div>
+      </div>
+      <button id="rightbtn" class="btnthing">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="quotebox">
+      <p>"There's no two words in the English language worse than 'good job'"  - Whiplash</p>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Random Video</h2>
+    <video controls width="600">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to know more?</p>
+    <button id="popupbtn">More Info</button>
+
+    <div id="popup1" class="popupbox">
+      <div class="popupinside">
+        <span id="xbtn" class="xthing">&times;</span>
+        <h3>More About Me</h3>
+        <p>Feel free to reach out over email or check out my GitHub!</p>
+      </div>
+    </div>
+
+    <div class="iconrow">
+      <a href="https://github.com/hridaykharpude" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/hridaykharpude" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>here's a footer</p>
+  </footer>
+
+</body>
 </html>

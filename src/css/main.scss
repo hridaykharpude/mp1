@@ -1,1 +1,224 @@
-/* Your SCSS here. */
+$primary-color: #2c3e50;
+$accent-color: #3498db;
+$light-bg: #f4f4f4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#navbar {
+  background-color: $primary-color;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .logo1 {
+  color: white;
+  font-size: 24px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul li {
+  margin-left: 20px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navbar ul li a.active {
+  color: $accent-color;
+  font-weight: bold;
+}
+
+#navbar.small {
+  padding: 10px 40px;
+}
+
+#navbar.small a {
+  font-size: 14px;
+}
+
+section {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#home {
+  height: 100vh;
+  background-color: $light-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .bigtextbox {
+  animation: fadein1 2s ease-in;
+}
+
+@keyframes fadein1 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#about .threeboxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#about .box1 {
+  width: 250px;
+  margin: 20px;
+}
+
+#about .box1 i {
+  font-size: 40px;
+  color: $accent-color;
+}
+
+#places .slideshowthing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#places .btnthing {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#places .allpics {
+  position: relative;
+  width: 800px;
+  height: 400px;
+}
+
+#places .onepic {
+  display: none;
+  width: 100%;
+}
+
+#places .onepic.pic-on {
+  display: block;
+}
+
+#places .onepic img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#quote {
+  height: 400px;
+  background-image: url("https://picsum.photos/id/1039/1600/900");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote .quotebox p {
+  color: white;
+  font-size: 28px;
+  font-style: italic;
+}
+
+#contact #popupbtn {
+  padding: 10px 20px;
+  background-color: $accent-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#contact .popupbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .popupbox.showpopup {
+  display: flex;
+}
+
+#contact .popupinside {
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+  position: relative;
+}
+
+#contact .popupinside .xthing {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#contact .iconrow {
+  margin-top: 20px;
+}
+
+#contact .iconrow a {
+  margin: 0 10px;
+  color: $primary-color;
+  font-size: 30px;
+}
+
+footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar ul li {
+    margin: 0 10px;
+  }
+
+  #places .allpics {
+    width: 90%;
+  }
+}
